@@ -12,10 +12,17 @@ module.exports = {
                     darker: '#2A252B'
                 }
             }
+        },
+        fontFamily: {
+            sans: ['Lato', 'ui-sans-serif', 'system-ui'],
+            serif: ['ui-serif', 'Georgia'],
+            mono: ['ui-monospace', 'SFMono-Regular'],
+            display: ['Expletus Sans', 'ui-sans-serif'],
+            body: ['Lato', 'ui-sans-serif', 'system-ui']
         }
     },
     variants: {
-        extend: {}
+        extend: { backgroundOpacity: ['hover'] }
     },
     plugins: []
 };

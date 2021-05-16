@@ -1,10 +1,10 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({ color, onClick }) => {
+const Button = ({ children, type, onClick }) => {
     return (
-        <button onClick={onClick} className={`Button ${color ? `Button--${color} ` : ''}`}>
-            Click me
+        <button onClick={onClick} className={`Button ${type ? `Button--${type} ` : ''}`}>
+            {children}
         </button>
     );
 };

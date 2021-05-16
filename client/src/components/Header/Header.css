@@ -1,0 +1,17 @@
+.Header {
+    &__title {
+        a {
+            @apply hover:no-underline;
+        }
+    }
+    &__nav {
+        &__item {
+            @apply font-display font-bold text-lg px-3 py-3 cursor-pointer text-white 
+                hover:text-purple-900 hover:bg-purple-200 hover:no-underline;
+            a,
+            a:hover {
+                color: inherit;
+            }
+        }
+    }
+}

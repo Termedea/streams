@@ -5,6 +5,4 @@ const TemplateName = () => {
     return <p className="TemplateName">TemplateName</p>;
 };
 
-TemplateName.defaultProps = {};
-
 export default TemplateName;
