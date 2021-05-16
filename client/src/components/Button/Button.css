@@ -1,0 +1,6 @@
+.Button {
+    @apply px-2 py-1 ml-3 rounded-md  focus:outline-none bg-main border border-main-darker text-main-lighter font-bold hover:bg-main-light hover:text-main-darker;
+    &--yellow {
+        @apply bg-yellow-400 border border-yellow-700 text-yellow-900 font-bold hover:bg-yellow-200;
+    }
+}
