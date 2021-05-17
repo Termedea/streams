@@ -1,27 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import GoogleAuth from '../GoogleAuth/GoogleAuth';
 
-const Header = ({ children }) => {
+const Header = () => {
     return (
-        <div className="Header bg-gradient-to-tl from-purple-600 to-pink-600 border-b-2 border-purple-700">
-            <h1 className="Header__title font-display text-8xl  text-pink-100 p-7">
-                <Link to="/" className="text-white hover:text-white">
-                    {children}
-                </Link>
+        <div className="Header bg-gradient-to-tr from-purple-600 to-pink-600 border-b-2 border-purple-700 flex justify-between items-center px-40 flex-wrap">
+            <h1 className="Header__title font-display text-5xl  text-green-50">
+                <Link to="/">FlowStreams</Link>
             </h1>
-            <nav className="Header__nav bg-opacity-30 bg-white flex justify-end">
+            <nav className="Header__nav flex justify-end">
                 <Link className="Header__nav__item" to="/">
                     All Streams
                 </Link>
 
-                <Link className="Header__nav__item" to="/streams/new">
-                    Create
-                </Link>
-
-                <Link className="Header__nav__item" to="/">
-                    All Streams
-                </Link>
+                <div className="Header__nav__item" to="/">
+                    <GoogleAuth />
+                </div>
             </nav>
         </div>
     );

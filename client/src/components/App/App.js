@@ -12,7 +12,7 @@ const App = () => {
     return (
         <div className="App">
             <BrowserRouter>
-                <Header>Streams</Header>
+                <Header />
                 <div className="App__container max-w-7xl mx-auto py-5">
                     <Route path="/" exact component={StreamList} />
                     <Route path="/streams/new" exact component={StreamCreate} />
