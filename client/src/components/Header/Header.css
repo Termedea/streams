@@ -11,7 +11,7 @@
             @apply h-full text-base lg:text-lg lg:font-display font-bold px-3 py-7 cursor-pointer text-green-50;
 
             &:hover {
-                @apply bg-opacity-30 bg-white text-green-50 no-underline;
+                @apply text-green-200 md:bg-opacity-30 md:bg-white md:text-green-50 no-underline;
             }
         }
     }
